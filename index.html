@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim Lane Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the swim lane component -->
+    <main>
+        <!-- Section for the swim lane containing movie titles -->
+        <section class="swimlane">
+            <h2>Movie Titles</h2>
+            <!-- Lane container with navigation buttons and card container -->
+            <div class="lane">
+                <!-- Navigation button to scroll left -->
+                <button class="nav-button" aria-label="Scroll left" tabindex="0">&lt;</button>
+                <!-- Container for the movie title cards -->
+                <div class="cards-container">
+                    <!-- Examples of a movie title card with an image -->
+                    <article class="card" tabindex="0">
+                        <img src="./images/oppenheimer.jpg" alt="Oppenheimer">
+                        <h3>Oppenheimer</h3>
+                    </article>
+                    <article class="card" tabindex="1">
+                        <img src="./images/past-lives.jpg" alt="Past Lives">
+                        <h3>Past Lives</h3>
+                    </article>
+                    <article class="card" tabindex="2">
+                        <img src="./images/polite-society.jpg" alt="Polite Society">
+                        <h3>Polite Society</h3>
+                    </article>
+                    <article class="card" tabindex="3">
+                        <img src="./images/transformers.jpg" alt="Transformers">
+                        <h3>Transformers</h3>
+                    </article>
+                    <article class="card" tabindex="4">
+                        <img src="./images/sanctuary.jpg" alt="Sanctuary">
+                        <h3>Sanctuary</h3>
+                    </article>
+                    <article class="card" tabindex="5">
+                        <img src="./images/talk-to-me.jpeg" alt="Talk To Me">
+                        <h3>Talk To Me</h3>
+                    </article>
+                    <article class="card" tabindex="6">
+                        <img src="./images/air.png" alt="Air">
+                        <h3>Air</h3>
+                    </article>
+                    <article class="card" tabindex="7">
+                        <img src="./images/avengers.jpg" alt="Avengers">
+                        <h3>Avengers</h3>
+                    </article>
+                    <article class="card" tabindex="8">
+                        <img src="./images/godzilla.jpg" alt="Godzilla">
+                        <h3>Godzilla</h3>
+                    </article>
+                    <article class="card" tabindex="9">
+                        <img src="./images/mad-max-fury-road.jpg" alt="Mad Max: Fury Road">
+                        <h3>Mad Max: Fury Road</h3>
+                    </article>
+                </div>
+                <!-- Navigation button to scroll right -->
+                <button class="nav-button" aria-label="Scroll right" tabindex="0">&gt;</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

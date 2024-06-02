@@ -1,0 +1,111 @@
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container styles */
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Img tag width and height */
+img{
+    width: 200px;
+    height: 300px;
+}
+
+/* Swimlane container styles */
+.swimlane {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Swimlane header styles */
+.swimlane h2 {
+    margin-top: 0;
+}
+
+/* Lane container styles */
+.lane {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Card container styles with horizontal scrolling */
+.cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+/* Individual card styles */
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: #e3e3e3;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Image styles within each card */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Card title styles */
+.card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Focus styles for cards */
+.card:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #007bff, 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+/* Navigation button styles */
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    transition: background-color 0.2s;
+}
+
+/* Focus styles for navigation buttons */
+.nav-button:focus {
+    outline: none;
+    background-color: #0056b3;
+    box-shadow: 0 0 0 3px #0056b3, 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide scrollbar for the card container */
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
